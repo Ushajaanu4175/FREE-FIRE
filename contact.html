@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us - ♪°ᎻᎬᎪꪜᎬƝ°♪</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">♪°ᎻᎬᎪꪜᎬƝ°♪</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="guild.html">Guild</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="contact.html" class="active">Join Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Join Our Guild</h1>
+            <p>Apply to become part of ♪°ᎻᎬᎪꪜᎬƝ°♪</p>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Guild Application</h2>
+                    <p>Fill out the form below to join our elite squad</p>
+                </div>
+
+                <form id="guildForm" class="guild-form">
+                    <div class="form-group">
+                        <label for="playerName">Player Name</label>
+                        <input type="text" id="playerName" name="playerName" required placeholder="Enter your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="uid">Free Fire UID</label>
+                        <input type="text" id="uid" name="uid" required placeholder="Enter your UID (e.g., 123456789)">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rank">Current Rank</label>
+                        <select id="rank" name="rank" required>
+                            <option value="">Select your rank</option>
+                            <option value="Bronze">Bronze</option>
+                            <option value="Silver">Silver</option>
+                            <option value="Gold">Gold</option>
+                            <option value="Platinum">Platinum</option>
+                            <option value="Diamond">Diamond</option>
+                            <option value="Heroic">Heroic</option>
+                            <option value="Grand Master">Grand Master</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="role">Role Preference</label>
+                        <select id="role" name="role" required>
+                            <option value="">Select your role</option>
+                            <option value="Leader">Leader</option>
+                            <option value="Rusher">Rusher</option>
+                            <option value="Sniper">Sniper</option>
+                            <option value="Assault">Assault</option>
+                            <option value="Support">Support</option>
+                            <option value="Flanker">Flanker</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="experience">Playing Experience</label>
+                        <select id="experience" name="experience" required>
+                            <option value="">Select experience level</option>
+                            <option value="Beginner">Beginner (0-6 months)</option>
+                            <option value="Intermediate">Intermediate (6-12 months)</option>
+                            <option value="Advanced">Advanced (1-2 years)</option>
+                            <option value="Expert">Expert (2+ years)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Why do you want to join?</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us why you'd be a great fit for our guild"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">Submit Application</button>
+                </form>
+
+                <div id="successMessage" class="success-message" style="display: none;">
+                    <div class="success-icon">✓</div>
+                    <h3>Application Submitted!</h3>
+                    <p>Thank you for applying to ♪°ᎻᎬᎪꪜᎬƝ°♪ Guild. We'll review your application and get back to you soon.</p>
+                    <button onclick="resetForm()" class="reset-button">Submit Another Application</button>
+                </div>
+            </div>
+
+            <div class="requirements-box">
+                <h3>Requirements</h3>
+                <ul class="requirements-list">
+                    <li>Minimum Platinum rank</li>
+                    <li>Active daily player</li>
+                    <li>Discord required</li>
+                    <li>Good communication skills</li>
+                    <li>Team player mentality</li>
+                    <li>Age 16+</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 ♪°ᎻᎬᎪꪜᎬƝ°♪ Guild. All rights reserved.</p>
+            <p>Free Fire is a trademark of Garena International</p>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
